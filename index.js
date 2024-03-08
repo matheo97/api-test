@@ -30,7 +30,7 @@ app.post("/", (req, res) => {
 
   // Printing 'api-key' from headers
   console.log("API Key:");
-  console.log(req.headers["api-key"]);
+  console.log(req.headers["x-api-key"]);
 
   res.send(req.body);
 });
